@@ -1,0 +1,23 @@
+{
+  "name": "news-sentiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ayyagari-dalalstreet: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@github.com/dalalstreet-ai/news-sentiment-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalalstreet-ai/news-sentiment-js/issues"
+  },
+  "homepage": "https://github.com/dalalstreet-ai/news-sentiment-js#readme",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
