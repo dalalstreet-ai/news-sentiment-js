@@ -6,7 +6,7 @@ class NewsSentimentDataSDK {
     this.baseURL = 'https://b7ooir8kk9.execute-api.us-east-1.amazonaws.com/dev/news-sentiment-data';
   }
 
-  async fetchSentimentData(platformToken, stockName, newsSources = [], exchangeName = '') {
+  async fetchSentimentData(platformToken, stockName, newsSources = []) {
     if (!platformToken) {
       throw new Error('platformToken is required.');
     }
@@ -14,8 +14,7 @@ class NewsSentimentDataSDK {
     const requestBody = {
       platformToken,
       stockName,
-      newsSources,
-      exchangeName
+      newsSources
     };
 
     try {

@@ -6,8 +6,8 @@ This is a NodeJS SDK for the News Sentiment Data API that allows users to retrie
 
 To install the SDK, use npm:
 
-```
-npm install news-sentiment-data-sdk
+```bash
+npm i news-sentiment
 ```
 
 ## Usage
@@ -17,10 +17,9 @@ To use the SDK, import it into your NodeJS application and provide the required 
 ```javascript
 const newsSentimentDataSDK = require('news-sentiment-data-sdk');
 
-const platformToken = "2211568797426599";
-const stockName = "AAPL";
-const exchangeName = ["NASDAQ", "NYSE"];
-const newsSources = ["CNN", "BBC"];
+const platformToken = "1234567890123456"; // Replace with your platform token (required)
+const stockName = "AAPL"; // Replace with the name of the stock (optional)
+const newsSources = ["CNN", "BBC"]; // Replace with the name of the news sources (optional)
 
 newsSentimentDataSDK.getNewsSentimentData(platformToken, stockName, exchangeName, newsSources)
   .then((data) => {
@@ -38,8 +37,6 @@ The `getNewsSentimentData` function takes four parameters:
 - `platformToken` (required): A string that represents the platform token for the user.
 
 - `stockName` (optional): A string that represents the name of the stock.
-
-- `exchangeName` (optional): A list of strings that represents the name of the stock exchange.
 
 - `newsSources` (optional): A list of strings that represents the name of the news sources.
 
