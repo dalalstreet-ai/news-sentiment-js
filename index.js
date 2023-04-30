@@ -27,3 +27,5 @@ class NewsSentimentDataSDK {
 }
 
 module.exports = NewsSentimentDataSDK;
+
+

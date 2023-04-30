@@ -15,13 +15,13 @@ npm i news-sentiment
 To use the SDK, import it into your NodeJS application and provide the required parameters to retrieve the news sentiment data.
 
 ```javascript
-const newsSentimentDataSDK = require('news-sentiment-data-sdk');
+const newsSentimentDataSDK = require('news-sentiment');
 
 const platformToken = "1234567890123456"; // Replace with your platform token (required)
 const stockName = "AAPL"; // Replace with the name of the stock (optional)
 const newsSources = ["CNN", "BBC"]; // Replace with the name of the news sources (optional)
 
-newsSentimentDataSDK.getNewsSentimentData(platformToken, stockName, exchangeName, newsSources)
+newsSentimentDataSDK.getNewsSentimentData(platformToken, stockName, newsSources)
   .then((data) => {
     console.log(data);
   })
